@@ -1,0 +1,46 @@
+Sep.-01 23:19:59.713 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Sep.-01 23:19:59.817 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.04.3
+Sep.-01 23:19:59.849 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [exotic_euclid] - revision: ff3f2b742d
+Sep.-01 23:19:59.863 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/arshaandhingra/pipeline/nextflow.config
+Sep.-01 23:19:59.864 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/arshaandhingra/pipeline/nextflow.config
+Sep.-01 23:19:59.903 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep.-01 23:20:00.403 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/Users/arshaandhingra/.nextflow/plugins
+Sep.-01 23:20:00.405 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep.-01 23:20:00.413 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins local root: .nextflow/plr/empty
+Sep.-01 23:20:00.420 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep.-01 23:20:00.422 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep.-01 23:20:00.427 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep.-01 23:20:00.435 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep.-01 23:20:00.492 [main] DEBUG nextflow.Session - Session uuid: 2bc65ab0-5b53-47b6-b77d-38ad821da937
+Sep.-01 23:20:00.492 [main] DEBUG nextflow.Session - Run name: exotic_euclid
+Sep.-01 23:20:00.492 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep.-01 23:20:00.523 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.04.3 build 5560
+  Created: 21-07-2021 15:09 UTC (08:09 PDT)
+  System: Mac OS X 10.16
+  Runtime: Groovy 3.0.7 on Java HotSpot(TM) 64-Bit Server VM 12.0.2+10
+  Encoding: UTF-8 (UTF-8)
+  Process: 18187@dhcp-128-189-250-31.ubcsecure.wireless.ubc.ca [128.189.250.31]
+  CPUs: 8 - Mem: 8 GB (24.7 MB) - Swap: 3 GB (1006.2 MB)
+Sep.-01 23:20:00.536 [main] DEBUG nextflow.Session - Work-dir: /Users/arshaandhingra/pipeline/work [Mac OS X]
+Sep.-01 23:20:00.536 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/arshaandhingra/pipeline/bin
+Sep.-01 23:20:00.551 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep.-01 23:20:00.562 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep.-01 23:20:00.680 [main] DEBUG nextflow.Session - Session start invoked
+Sep.-01 23:20:00.897 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep.-01 23:20:00.911 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: 
+Sep.-01 23:20:00.917 [main] DEBUG nextflow.Session - Session aborted -- Cause: No such property: myBlastDatabase for class: Script_a2213b93
+Sep.-01 23:20:00.933 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: No such property: myBlastDatabase for class: Script_a2213b93
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:65)
+	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:341)
+	at Script_a2213b93.runScript(Script_a2213b93:2)
+	at nextflow.script.BaseScript.runDsl1(BaseScript.groovy:164)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:200)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:221)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:212)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:120)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:302)
+	at nextflow.cli.Launcher.run(Launcher.groovy:475)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)

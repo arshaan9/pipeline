@@ -1,0 +1,3 @@
+2021-09-01 23:19:33	1.9s	spontaneous_blackwell	OK	ec11eb0ec77b9f95425695824ca01ffb150699ae	44299d16-c2d9-4f87-9d99-5a5a7307f477	nextflow run hello
+2021-09-01 23:20:00	-	exotic_euclid	-	ff3f2b742da2a3d87fab912d3c651b3d	2bc65ab0-5b53-47b6-b77d-38ad821da937	nextflow run main.nf
+2021-09-01 23:21:20	546ms	sharp_mclean	OK	ed4167ff6d10f8632a051c7a6c226d0b	9c849253-f89f-47b7-8b4a-5df159765e21	nextflow run main.nf
